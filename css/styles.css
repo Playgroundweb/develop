@@ -1,0 +1,154 @@
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.form-body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.mv {
+    position: relative;
+}
+
+.page-ttl {
+    font-size: 4rem;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+@media(max-width:991px) {
+    .page-ttl {
+        font-size: 5vw;
+        top: 30%;
+    }
+}
+
+.menu-bg {
+    right: -100%;
+    height: 70%;
+    position: fixed;
+    padding: 1rem;
+    top: 98px;
+    width: 30%;
+    z-index: 10;
+    transition: 0.6s;
+}
+
+@media(max-width:567px) {
+    .menu-bg {
+        transition: 0.6s;
+        width: 70%;
+    }
+}
+
+.menu-close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px 5px;
+    box-shadow:0px 0px 6px 1px #d8d8d8;
+    border-radius:6px;
+}
+
+.overlays {
+    background-color: rgba(0, 0, 0, 0.6);
+    right: -100%;
+    top: 100px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.overlays.is-active {
+    right: 0;
+    position: absolute;
+}
+
+.menu-bg.is-active {
+    right: 0;
+    position: absolute;
+}
+
+.lineh-2 {
+    line-height: 2;
+}
+
+.ls-5 {
+    letter-spacing: 5px;
+}
+
+.ls-10 {
+    letter-spacing: 10px;
+}
+
+.cu-po {
+    cursor: pointer;
+}
+
+.ff-bs {
+    font-family: 'Barlow', sans-serif;
+}
+
+.ff-rs {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ff-fs {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.border-blue {
+    border: 2px solid #080e68;
+}
+
+.border-blue2 {
+    border: 2px solid #7EA6E0;
+}
+
+.bg-blue {
+    background-color: #080e68;
+}
+
+.bg-blue2 {
+    background-color: #7EA6E0;
+}
+
+.fc-blue {
+    color: #080e68;   
+}
+
+.fc-blue2 {
+    color: #7EA6E0;
+}
+
+#js-top {
+    bottom: 10px;
+    cursor: pointer;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+}
+
+.bg-grad-blue1 {
+    background: -moz-linear-gradient(90deg, #031b5c, #185fe2); 
+    background: -webkit-linear-gradient(90deg, #031b5c, #185fe2); 
+    background: linear-gradient(90deg, #031b5c, #185fe2);
+}
+
+.rotate-anime {
+    animation: rotate-anime 3s linear infinite;
+}
+@keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+    100%  {transform: rotate(360deg);}
+}
